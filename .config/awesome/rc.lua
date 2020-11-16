@@ -282,7 +282,7 @@ globalkeys = my_table.join(
     awful.key({modkey, "Control"}, "t", function() awful.util.spawn ( "thunar" ) end,
      {description = "thunar", group = "GUI@filemanager"}),
     awful.key({modkey, altkey, "Control"}, "t", function() awful.util.spawn ( terminal.." -e fff") end,
-     {description = "Fucking Fast Filemanager", group = "CLI@filemanager"}
+     {description = "Fucking Fast Filemanager", group = "CLI@filemanager"}),
     -- Hotkeys Awesome
 
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
