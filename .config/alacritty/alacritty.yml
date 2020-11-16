@@ -1,0 +1,26 @@
+title: Ohio2's Fine Terminal
+gtk_theme_variant: Dark
+font:
+ normal: 
+  family: DejaVu Sans Mono
+ italic:
+  family: DejaVu Sans Mono
+ bold:
+  family: DejaVu Sans Mono
+ bold_italic:
+  family: DejaVu Sans Mono
+background_opacity: 0.75
+cursor: 
+ style: Beam
+ shell:
+  program: /bin/zsh
+  args:
+    - --login
+    - -c tmux
+colors:
+  primary:
+    background: '#32465B'
+
+#working_directory: /home/maksymilian
+# somethings?
+
