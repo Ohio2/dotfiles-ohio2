@@ -271,7 +271,7 @@ globalkeys = my_table.join(
         {description = "Gnome screenshot", group = "screenshots"}),
 
     -- Personal keybindings}}}
-    awful.key({ modkey,        }, "l", function() awful.util.spawn ( "lutris" ) end,
+    awful.key({ modkey, altkey,    }, "l", function() awful.util.spawn ( "lutris" ) end,
      {description = "lutris", group = "game"}),
     awful.key({ modkey,        }, "p", function() awful.util.spawn ( "gimp" ) end,
      {description = "gimp", group = "gfx"}),
