@@ -17,10 +17,12 @@ cursor:
   args:
     - --login
     - -c tmux
-colors:
-  primary:
-    background: '#32465B'
 
+#personal colors
+  colors:
+  primary:
+    #  background: '#32465B' #blue color, remove the previous hashtag
+   background: '#634470' #purple color, waporwave?
 #working_directory: /home/maksymilian
 # somethings?
 
