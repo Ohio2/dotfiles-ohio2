@@ -1,0 +1,3 @@
+#!/bin/sh
+exec xautolock -detectsleep -time 10 -locker  "/home/maksymilian/.local/bin/lock"
+exec xidlehook --not-when-fullscreen --timer 1200 "systemctl suspend" -
