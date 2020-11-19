@@ -1,12 +1,5 @@
 #autoload
 nerdfetch-ohio2
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-#fi
-
 #If you come from bafsh you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -105,7 +98,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias alacritty.='$(EDITOR) ~/.config/alacritty/alacritty.yml'
+alias alacritty.='$EDITOR ~/.config/alacritty/alacritty.yml'
 alias pacman-dev="namcap"
 alias dsteam="cd ~/.steam/steam"
 alias 'pacman -D'="downgrade"
@@ -126,16 +119,16 @@ alias tree="exa --tree"
 alias zshrc='nvim ~/.zshrc ; nvim ~/.zsh/aliasrc'
 alias swd='pwd > ~/.zsh/.wd_history'
 alias lwd='cd $(cat ~/.zsh/.wd_history)'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 alias quit='exit'
 ##Maybe Maybe \/ Culprate?
 ##Maybe Maybe /\ Culprate?
 source /home/maksymilian/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /home/maksymilian/.zsh/zsh-autosuggestions/zsh-autosuggetions.zsh 2>/dev/null
 source /home/maksymilian/.zsh/cp/cp.plugin.zsh 2>/dev/null
-source /home/maksymilian/.zsh/aliasrc
-#source ~/.powerlevel10k/powerlevel10k.zsh-theme
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 plugins=(up gitstatus git)
 if [ -e /home/maksymilian/.nix-profile/etc/profile.d/nix.sh ]; then . /home/maksymilian/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 ##
@@ -143,4 +136,3 @@ if [ -e /home/maksymilian/.nix-profile/etc/profile.d/nix.sh ]; then . /home/maks
 ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=cyan,underline
 ZSH_HIGHLIGHT_STYLES[precommand]=fg=cyan,underline
 ZSH_HIGHLIGHT_STYLES[arg0]=fg=cyan
-alias windows="sudo nohup scripts/windows.sh > /tmp/nohup.log 2>&1"
