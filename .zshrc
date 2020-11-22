@@ -17,7 +17,7 @@ export ZSH="/home/maksymilian/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="ohio2"
+ZSH_THEME="ybl"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -116,16 +116,8 @@ alias jail="firejail"
 alias fetch="neofetch"
 alias cls="clear"
 alias ls="lsd"
-alias zshrs="source ~/.zshrc"
-alias cd..="cd .."
-alias cd...="cd ../.."
-alias cd4.="cd ../../.."
-alias cd5.="cd ../../../.."
 alias exjava="java -jar"
 alias tree="exa --tree"
-alias zshrc='nvim ~/.zshrc ; nvim ~/.zsh/aliasrc'
-alias swd='pwd > ~/.zsh/.wd_history'
-alias lwd='cd $(cat ~/.zsh/.wd_history)'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
