@@ -1,12 +1,17 @@
 #
 # wm independent hotkeys
 #
+# fff and thunar?
+super + ctrl + t
+ thunar
+super + alt + ctrl + t
+ st -e 'fff'
 # brave browser!
 super + alt + b
  brave
 # terminal emulator
 super + Return
-	alacritty
+	st
 
 # program launcher
  super + alt + Return
@@ -25,7 +30,7 @@ super + alt + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
-alt + shift + c
+alt + F4
 	bspc node -{c,k}
 
 # alternate between the tiled and monocle layout
@@ -45,7 +50,7 @@ super + g
 #
 
 # set the window state
-super + {t,shift + t,s,f}
+super + {shift + l,t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
