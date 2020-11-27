@@ -1,29 +1,14 @@
-#autoload
-# ::::::::  :::    ::: ::::::::::: ::::::::   ::::::::  ::: ::::::::            ::::::::: ::::::::  :::    ::: :::::::::   ::::::::  
-#:+:    :+: :+:    :+:     :+:    :+:    :+: :+:    :+: :+ :+:    :+:                :+: :+:    :+: :+:    :+: :+:    :+: :+:    :+: 
-#+:+    +:+ +:+    +:+     +:+    +:+    +:+       +:+     +:+                      +:+  +:+        +:+    +:+ +:+    +:+ +:+        
-#+#+    +:+ +#++:++#++     +#+    +#+    +:+     +#+       +#++:++#++              +#+   +#++:++#++ +#++:++#++ +#++:++#:  +#+        
-#+#+    +#+ +#+    +#+     +#+    +#+    +#+   +#+                +#+             +#+           +#+ +#+    +#+ +#+    +#+ +#+        
-##+#    #+# #+#    #+#     #+#    #+#    #+#  #+#          #+#    #+#            #+#     #+#    #+# #+#    #+# #+#    #+# #+#    #+# 
-# ########  ###    ### ########### ########  ##########     ########            ######### ########  ###    ### ###    ###  ########  
+#autoload -U colors && colors
+#  ::::::::  :::    ::: ::::::::::: ::::::::   ::::::::  ::: ::::::::            ::::::::: ::::::::  :::    ::: :::::::::   ::::::::  
+# :+:    :+: :+:    :+:     :+:    :+:    :+: :+:    :+: :+ :+:    :+:                :+: :+:    :+: :+:    :+: :+:    :+: :+:    :+: 
+# +:+    +:+ +:+    +:+     +:+    +:+    +:+       +:+     +:+                      +:+  +:+        +:+    +:+ +:+    +:+ +:+        
+# +#+    +:+ +#++:++#++     +#+    +#+    +:+     +#+       +#++:++#++              +#+   +#++:++#++ +#++:++#++ +#++:++#:  +#+        
+# +#+    +#+ +#+    +#+     +#+    +#+    +#+   +#+                +#+             +#+           +#+ +#+    +#+ +#+    +#+ +#+        
+# #+#    #+# #+#    #+#     #+#    #+#    #+#  #+#          #+#    #+#            #+#     #+#    #+# #+#    #+# #+#    #+# #+#    #+# 
+#  ########  ###    ### ########### ########  ##########     ########            ######### ########  ###    ### ###    ###  ########  
 nerdfetch-ohio2
-#If you come from bafsh you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
 export ZSH="/home/maksymilian/.oh-my-zsh"
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="ybl"
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
+PROMPT="%B[%F{157}%*%F{255}] %F{033}%n%F{255}@%F{051}%m:%F{003}%~ %F{069}%?%F{255}%# %b%"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -44,7 +29,7 @@ ZSH_THEME="ybl"
 # DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
+DISABLE_LS_COLORS="false"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -53,7 +38,7 @@ ZSH_THEME="ybl"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -76,7 +61,7 @@ ZSH_THEME="ybl"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+#plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 # User configuration
@@ -107,31 +92,19 @@ source $ZSH/oh-my-zsh.sh
 
 alias alacritty.='$EDITOR ~/.config/alacritty/alacritty.yml'
 alias pacman-dev="namcap"
-alias dsteam="cd ~/.steam/steam"
 alias 'pacman -D'="downgrade"
-alias cheat="curl cheat.sh/"
-alias vi="nvim"
-alias vim="nvim"
 alias jail="firejail"
 alias fetch="neofetch"
 alias cls="clear"
-alias ls="lsd"
 alias exjava="java -jar"
 alias tree="exa --tree"
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-alias quit='exit'
-##Maybe Maybe \/ Culprate?
-##Maybe Maybe /\ Culprate?
 source /home/maksymilian/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /home/maksymilian/.zsh/zsh-autosuggestions/zsh-autosuggetions.zsh 2>/dev/null
 source /home/maksymilian/.zsh/cp/cp.plugin.zsh 2>/dev/null
 plugins=(up gitstatus git)
 if [ -e /home/maksymilian/.nix-profile/etc/profile.d/nix.sh ]; then . /home/maksymilian/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-##
-#####used for zsh syntax highlighting
-ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=cyan,underline
-ZSH_HIGHLIGHT_STYLES[precommand]=fg=cyan,underline
-ZSH_HIGHLIGHT_STYLES[arg0]=fg=cyan
+source ~/.zsh/gitstatus/gitstatus.prompt.zsh

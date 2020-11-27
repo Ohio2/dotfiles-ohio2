@@ -57,7 +57,6 @@ alias -g P="2>&1| pygmentize -l pytb"
 
 alias hpush='gitpush ; bpytop'
 alias cheat='curl cheat.sh/'
-alias zshrc='nvim ~/.zshrc ; nvim ~/.zsh/aliasrc'
 alias dud='du -d 1 -h'
 alias duf='du -sh *'
 alias fd='find . -type d -name'
@@ -82,14 +81,11 @@ alias fetch="neofetch"
 alias zshrs="source ~/.zshrc"
 alias gds-start='sudo systemctl start openvpn-client@gds'
 alias gds-stop='sudo systemctl stop openvpn-client@gds'
-alias exjava='java -jar'
-alias cd..="cd .."
-alias cd...="cd ../.."
-alias cd4.="cd ../../.."
-alias tree="exa --tree"
-alias cd5.="cd ../../../.."
-alias doasedit="doas micro"
 alias quit='exit'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 gitpush() {
     git add .
     git commit -m "$*"
