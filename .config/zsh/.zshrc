@@ -20,7 +20,7 @@ PROMPT="%B[%F{157}%*%F{255}] %F{033}%n%F{255}@%F{051}%m:%F{003}%~ %F{069}%?%F{25
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
+DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -38,7 +38,7 @@ DISABLE_LS_COLORS="false"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
+#COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -63,7 +63,7 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
+source $HOME/.oh-my-zsh/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -102,9 +102,9 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-source /home/maksymilian/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-source /home/maksymilian/.zsh/zsh-autosuggestions/zsh-autosuggetions.zsh 2>/dev/null
-source /home/maksymilian/.zsh/cp/cp.plugin.zsh 2>/dev/null
+source $ZDOTDIR/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+source $ZDOTDIR/zsh/zsh-autosuggestions/zsh-autosuggetions.zsh 2>/dev/null
+source $ZDOTDIR/zsh/cp/cp.plugin.zsh 2>/dev/null
 plugins=(up gitstatus git)
 if [ -e /home/maksymilian/.nix-profile/etc/profile.d/nix.sh ]; then . /home/maksymilian/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-source ~/.zsh/gitstatus/gitstatus.prompt.zsh
+source $ZDOTDIR/zsh/gitstatus/gitstatus.prompt.zsh
