@@ -1,4 +1,5 @@
-# gitstatus
+# gitstatus, note, i changed this for god's sakes
+# so please don't rage at me
 
 **gitstatus** is a 10x faster alternative to `git status` and `git describe`. Its primary use
 case is to enable fast git prompt in interactive shells.
