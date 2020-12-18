@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/maksymilian/pacman-src/bin/man'
+let g:netrw_dirhist_2='/home/maksymilian/.config/picom'
+let g:netrw_dirhist_1='/home/maksymilian/.config/sxhkd'
