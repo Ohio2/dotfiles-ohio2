@@ -1,6 +1,0 @@
-#!/bin/bash
-rm $HOME/.tmp/screenshot.png
-xfce4-screenshooter -f -s $HOME/.tmp/screenshot.png
-convert $HOME/.tmp/screenshot.png -blur 0x20 $HOME/.tmp/screenshotblur.png
-convert $HOME/.tmp/screenshotblur.png $HOME/.lockscreen.png -gravity center -composite -matte $HOME/.tmp/screenlock.png
-i3lock -i $HOME/.tmp/screenlock.png -l -u
