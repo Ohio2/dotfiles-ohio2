@@ -89,6 +89,7 @@ alias -g .....='../../../..'
 alias -g dev="devices"
 alias gc="git clone"
 alias gp="git commit && git push"
+alias gs="git stash"
 source $ZDOTDIR/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source $ZDOTDIR/zsh/zsh-autosuggestions/zsh-autosuggetions.zsh 2>/dev/null
 source $ZDOTDIR/zsh/cp/cp.plugin.zsh 2>/dev/null
